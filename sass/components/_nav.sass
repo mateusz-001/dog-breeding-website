@@ -14,19 +14,22 @@ nav
         height: $nav-height
 
         .bar
-            width: 100%
-            height: 4px
+            width: 90%
+            height: $bar-height
             background-color: #fff
             position: absolute
-            right: 10%
+            right: 20%
             transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .2s .4s
 
         .bar-1
-            top: 20%
+            top: calc(20% - (#{$bar-height} / 2 ))
 
         .bar-2
-            top: calc(50% - (4px/2))
+            top: calc(50% - (#{$bar-height} / 2 ))
 
         .bar-3
-            top: calc(80% - (4px/2))
+            top: calc(80% - (#{$bar-height} / 2 ))
+
+header
+    height: 95vh
             
