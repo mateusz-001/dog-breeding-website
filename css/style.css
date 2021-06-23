@@ -25,7 +25,7 @@ nav {
   height: 10vh;
   width: 100%;
   background-color: #2b2b2b;
-  z-index: 2;
+  z-index: 3;
 }
 
 nav .hamburger {
@@ -215,5 +215,67 @@ aside div button:hover::before {
 
 aside.active {
   left: 0;
+}
+
+article.puppies {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+article.puppies h2 {
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10% 0 5% 0;
+}
+
+article.puppies section {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 5% 0 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+article.puppies section img {
+  text-align: center;
+  height: auto;
+  max-width: 80%;
+  margin-bottom: 5%;
+}
+
+article.puppies section p {
+  margin: 5% 0 5% 0;
+  width: 75%;
+  height: auto;
+  font-size: 1.3rem;
+  font-weight: 600;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+article.puppies section h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
