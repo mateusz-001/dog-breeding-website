@@ -35,28 +35,47 @@ nav .hamburger {
   height: 10vh;
 }
 
-nav .hamburger .bar {
-  width: 70%;
+nav .hamburger span {
+  width: 60%;
   height: 5px;
   background-color: #fff;
   position: absolute;
-  right: 20%;
   -webkit-transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, -webkit-transform .2s .4s;
   transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, -webkit-transform .2s .4s;
   transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .2s .4s;
   transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .2s .4s, -webkit-transform .2s .4s;
 }
 
-nav .hamburger .bar-1 {
-  top: calc(25% - (5px / 2 ));
+nav span:nth-child(1) {
+  top: calc(30% - (5px / 2 ));
 }
 
-nav .hamburger .bar-2 {
+nav span:nth-child(2) {
   top: calc(50% - (5px / 2 ));
 }
 
-nav .hamburger .bar-3 {
-  top: calc(75% - (5px / 2 ));
+nav span:nth-child(3) {
+  top: calc(70% - (5px / 2 ));
+}
+
+nav .active span:nth-child(1) {
+  top: calc(50% - 5px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+nav .active span:nth-child(2) {
+  opacity: 0;
+}
+
+nav .active span:nth-child(3) {
+  top: calc(50% - 5px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .slider {
@@ -122,6 +141,12 @@ article.dogs section.dog p {
   width: 75%;
   font-size: 1.3rem;
   font-weight: 600;
+  height: 200px;
+  overflow: hidden;
+}
+
+article.dogs section.dog p.show {
+  height: auto;
 }
 
 article.dogs section.dog h3 {
@@ -168,5 +193,9 @@ article.dogs section.dog button.show-more:hover::before {
 
 article.dogs section.dog button.show-more:hover {
   color: white;
+}
+
+aside {
+  z-index: 5;
 }
 /*# sourceMappingURL=style.css.map */
