@@ -9,3 +9,4 @@ const showMenu = () => {
 }
 
 menuIcon.addEventListener('click', showMenu);
+menuContent.addEventListener('click', showMenu);
