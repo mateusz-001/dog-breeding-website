@@ -26,45 +26,12 @@ article.dogs
         p
             margin: 5% 0 5% 0
             width: 75%
+            height: auto;
             font-size: 1.3rem
             font-weight: 600
-            height: 200px
             overflow: hidden
-        p.show
-            height: auto
+            transition: .5s
         h3
             font-size: 3rem
             font-weight: 400
             text-transform: uppercase
-        button.show-more
-            width: 40%
-            height: 50px
-            margin: 0 0 5% 0
-            position: relative
-            font-size: 1.2rem
-            font-family: $font-fam
-            font-weight: 600
-            letter-spacing: 2px
-            background-color: #fff
-            border: none
-            border-bottom: 2px solid #617BFF
-            border-top: 2px solid #617BFF
-            background-color: transparent
-            transition: .3s .1s linear
-            overflow: hidden
-        button.show-more::before
-            content: ""
-            position: absolute
-            left: 0
-            top: 0
-            height: 100%
-            width: 0
-            transition: .3s linear
-            background-color: #617BFF
-            z-index: -1
-        button.show-more:hover::before
-            width: 100%
-        button.show-more:hover
-            color: white
-
-        
