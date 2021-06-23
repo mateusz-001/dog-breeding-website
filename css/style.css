@@ -24,6 +24,7 @@ nav {
   height: 10vh;
   width: 100%;
   background-color: #2b2b2b;
+  z-index: 2;
 }
 
 nav .hamburger {
@@ -133,6 +134,7 @@ article.dogs section.dog button.show-more {
   width: 40%;
   height: 50px;
   margin: 0 0 5% 0;
+  position: relative;
   font-size: 1.2rem;
   font-family: "open sans condensed", sans-serif;
   font-weight: 600;
@@ -141,5 +143,30 @@ article.dogs section.dog button.show-more {
   border: none;
   border-bottom: 2px solid #617BFF;
   border-top: 2px solid #617BFF;
+  background-color: transparent;
+  -webkit-transition: .3s .1s linear;
+  transition: .3s .1s linear;
+  overflow: hidden;
+}
+
+article.dogs section.dog button.show-more::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  background-color: #617BFF;
+  z-index: -1;
+}
+
+article.dogs section.dog button.show-more:hover::before {
+  width: 100%;
+}
+
+article.dogs section.dog button.show-more:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
