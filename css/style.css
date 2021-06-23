@@ -7,7 +7,7 @@
 
 body {
   background-color: #fff;
-  font-family: 'open sans condensed', sans-serif;
+  font-family: "open sans condensed", sans-serif;
   font-size: 10px;
   color: #424242;
 }
@@ -88,7 +88,6 @@ article.dogs h2 {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 10%;
 }
 
 article.dogs h2::after {
@@ -98,6 +97,7 @@ article.dogs h2::after {
 article.dogs section.dog {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin: 5% 0 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,15 @@ article.dogs section.dog h3 {
 
 article.dogs section.dog button.show-more {
   width: 40%;
-  height: 35px;
+  height: 50px;
   margin: 0 0 5% 0;
+  font-size: 1.2rem;
+  font-family: "open sans condensed", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid #617BFF;
+  border-top: 2px solid #617BFF;
 }
 /*# sourceMappingURL=style.css.map */
