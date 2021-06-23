@@ -194,8 +194,4 @@ article.dogs section.dog button.show-more:hover::before {
 article.dogs section.dog button.show-more:hover {
   color: white;
 }
-
-aside {
-  z-index: 5;
-}
 /*# sourceMappingURL=style.css.map */
