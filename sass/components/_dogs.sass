@@ -9,25 +9,30 @@ article.dogs
         font-size: 4rem
         font-weight: 400
         text-align: center
+        text-transform: uppercase
         margin-bottom: 10%
     h2::after
         content: ""
 
     section.dog
-        border: 0.1px solid black
-        width: 90%
-        height: 400px
+        flex-basis: 100%
         display: flex
+        align-items: center
         flex-direction: column
         img
             text-align: center
-            height: 150px
+            height: auto
             max-width: 80%
         p
+            margin: 5% 0 5% 0
             width: 75%
+            font-size: 1.3rem
+            font-weight: 600
         h3
             font-size: 3rem
             font-weight: 400
+            text-transform: uppercase
         button.show-more
             width: 40%
-            height: 25px
+            height: 35px
+            margin: 0 0 5% 0
