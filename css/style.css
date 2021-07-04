@@ -80,11 +80,11 @@ nav .active span:nth-child(3) {
 }
 
 .slider {
-  height: 97vh;
+  height: 80vh;
 }
 
 .slider .slider-image {
-  margin-top: 3vh;
+  margin-top: 7.5vh;
   max-width: 100%;
   min-width: 300px;
   height: auto;
@@ -141,7 +141,7 @@ article.dogs section.dog p {
   margin: 5% 0 5% 0;
   width: 75%;
   height: auto;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   overflow: hidden;
   -webkit-transition: .5s;
@@ -242,7 +242,7 @@ article.puppies h2 {
 article.puppies section {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin: 5% 0 5% 0;
+  margin: 0 0 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,19 +263,73 @@ article.puppies section img {
 }
 
 article.puppies section p {
-  margin: 5% 0 5% 0;
+  margin: 0 0 5% 0;
   width: 75%;
   height: auto;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   overflow: hidden;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-article.puppies section h3 {
-  font-size: 3rem;
+article.about {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+article.about h2 {
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+article.about h2::after {
+  content: "";
+}
+
+article.about .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15% 0 15% 0;
+}
+
+article.about .box i {
+  width: 100%;
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+article.about .box h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 5% 0 5% 0;
+}
+
+article.about .box p {
+  width: 100%;
+  height: auto;
+  font-size: 1.1rem;
+  font-weight: 600;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 0 12.5% 0 12.5%;
 }
 /*# sourceMappingURL=style.css.map */
