@@ -327,6 +327,7 @@ article.about .box p {
   height: auto;
   font-size: 1.1rem;
   font-weight: 600;
+  text-align: center;
   overflow: hidden;
   -webkit-transition: .5s;
   transition: .5s;
