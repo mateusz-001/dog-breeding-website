@@ -22,7 +22,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  height: 10vh;
+  height: 7.5vh;
   width: 100%;
   background-color: #2b2b2b;
   z-index: 3;
@@ -32,13 +32,13 @@ nav .hamburger {
   position: absolute;
   top: 0;
   right: 0;
-  width: 10vh;
-  height: 10vh;
+  width: 7.5vh;
+  height: 7.5vh;
 }
 
 nav .hamburger span {
   width: 60%;
-  height: 5px;
+  height: 2px;
   background-color: #fff;
   position: absolute;
   -webkit-transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, -webkit-transform .2s .4s;
@@ -48,19 +48,19 @@ nav .hamburger span {
 }
 
 nav span:nth-child(1) {
-  top: calc(30% - (5px / 2 ));
+  top: calc(30% - (2px / 2 ));
 }
 
 nav span:nth-child(2) {
-  top: calc(50% - (5px / 2 ));
+  top: calc(50% - (2px / 2));
 }
 
 nav span:nth-child(3) {
-  top: calc(70% - (5px / 2 ));
+  top: calc(70% - (2px / 2 ));
 }
 
 nav .active span:nth-child(1) {
-  top: calc(50% - 5px);
+  top: calc(50% - 2px);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transform: rotate(45deg);
@@ -72,7 +72,7 @@ nav .active span:nth-child(2) {
 }
 
 nav .active span:nth-child(3) {
-  top: calc(50% - 5px);
+  top: calc(50% - 2px);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transform: rotate(-45deg);
@@ -155,10 +155,10 @@ article.dogs section.dog h3 {
 }
 
 aside {
-  height: calc(100vh - 10vh);
+  height: calc(100vh - 7.5vh);
   width: 100%;
   position: fixed;
-  top: 10vh;
+  top: 7.5vh;
   left: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
