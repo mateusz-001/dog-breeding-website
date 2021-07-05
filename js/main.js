@@ -22,7 +22,19 @@ menuIcon.addEventListener('click', showMenu);
 menuContent.addEventListener('click', showMenu);
 
 //slider
-const slideList = ["img/dog1.jpg", "img/dog2.jpg", "img/dog3.jpg"];
+const slideList = ["img/1.jpg", "img/2.jpg", "img/3.jpg"];
 
-const image = document.querySelector('img.slider');
-const dots = [...document.querySelectorAll('.dots span')];
+const image = document.querySelector('.slider-image');
+
+const time = 1000;
+let active = 0;
+
+const changeSlide = () => {
+    active++;
+
+    if(active === slideList.length){
+        active = 0;
+    }
+        image.src = slideList[active];
+}
+setInterval(changeSlide, time);
