@@ -18,6 +18,10 @@ a {
   color: #000;
 }
 
+h2 {
+  position: relative;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -406,5 +410,39 @@ footer {
 
 footer a {
   color: #fff;
+}
+
+@-webkit-keyframes h2-after {
+  0% {
+  }
+  30% {
+    width: 40%;
+  }
+  50% {
+    width: 0%;
+  }
+  51% {
+    left: 100%;
+  }
+  70% {
+    width: 40%;
+  }
+}
+
+@keyframes h2-after {
+  0% {
+  }
+  30% {
+    width: 40%;
+  }
+  50% {
+    width: 0%;
+  }
+  51% {
+    left: 100%;
+  }
+  70% {
+    width: 40%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

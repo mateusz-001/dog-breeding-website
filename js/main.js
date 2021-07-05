@@ -20,3 +20,9 @@ const showText = () => {
 */
 menuIcon.addEventListener('click', showMenu);
 menuContent.addEventListener('click', showMenu);
+
+//slider
+const slideList = ["img/dog1.jpg", "img/dog2.jpg", "img/dog3.jpg"];
+
+const image = document.querySelector('img.slider');
+const dots = [...document.querySelectorAll('.dots span')];
