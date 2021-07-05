@@ -337,15 +337,27 @@ article.about .box p {
 article.how-to-get {
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 article.how-to-get h2 {
   width: 100%;
   font-size: 4rem;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   margin: 0 0 15% 0;
+  text-align: center;
+}
+
+article.how-to-get iframe {
+  width: 90%;
 }
 
 article.communication {
@@ -364,28 +376,22 @@ article.communication h2 {
 }
 
 article.communication .box {
-  width: 100%;
+  margin: 10% 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10% 0 0 0;
 }
 
 article.communication i {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
   font-size: 1.75rem;
+  padding-right: 10px;
 }
 
 article.communication p {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
   font-size: 1.1rem;
 }
 
