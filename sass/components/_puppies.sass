@@ -23,8 +23,28 @@ article.puppies
             max-width: 80%
             margin-bottom: 5%
         button
-            width: 50%
+            width: 30%
             margin-bottom: 5%
+            padding-bottom: 5px
+            font-size: 1.3rem 
+            font-family: $font-fam
+            font-weight: 600
+            color: #424242
+            background-color: transparent
+            border: none
+            position: relative
+        button::before
+            content: ""
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 2px
+            width: 100%
+            transition: .3s linear
+            background-color: #617BFF
+            z-index: -1
+        button:hover::before
+            height: 100%
         .read-more-text
             display: none
         .read-more-text--active
