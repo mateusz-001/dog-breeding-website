@@ -22,11 +22,11 @@ menuIcon.addEventListener('click', showMenu);
 menuContent.addEventListener('click', showMenu);
 
 //slider
-const slideList = ["img/1.jpg", "img/2.jpg", "img/3.jpg"];
+const slideList = ["img/1.jpg", "img/3.jpg"];
 
 const image = document.querySelector('.slider-image');
 
-const time = 1000;
+const time = 3000;
 let active = 0;
 
 const changeSlide = () => {
