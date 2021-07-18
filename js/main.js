@@ -1,3 +1,4 @@
+//menu
 const menuIcon = document.querySelector('nav .hamburger');
 const menuContent = document.querySelector('aside');
 
@@ -6,18 +7,6 @@ const showMenu = () => {
     menuContent.classList.toggle('active');
 }
 
-/*
-const showText = () => {
-    paragraphEddie.classList.toggle('show');
-    if(paragraphEddie.classList.contains('show')){ 
-        paragraphEddie.textContent = currentTextEddie + showTextEddie;
-        btnEddie.textContent = "Zobacz mniej";
-    }else{
-        paragraphEddie.textContent = currentTextEddie;
-        btnEddie.textContent = "Zobacz więcej";
-    }
-}
-*/
 menuIcon.addEventListener('click', showMenu);
 menuContent.addEventListener('click', showMenu);
 
@@ -38,3 +27,22 @@ const changeSlide = () => {
         image.src = slideList[active];
 }
 setInterval(changeSlide, time);
+
+//read more
+const textContainer = document.querySelector('.read-more-text');
+const showTextBtn = document.querySelector('.read-more-btn');
+
+const showText = e => {
+    
+    const current = e.target
+    const isReadMoreBtn = current.className.includes('read-more-btn');
+    
+    if(!showTextBtn) return;
+
+    const currentText = e.target.parentNode.querySelector('.read-more-text');
+    
+    currentText.classList.toggle('read-more-text--active');
+    current.textContent = current.textContent.includes('Pokaż więcej...') ? "Pokaż mniej..." : "Pokaż więcej...";
+}
+
+showTextBtn.addEventListener('click', showText);

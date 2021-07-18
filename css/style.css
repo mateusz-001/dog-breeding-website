@@ -26,6 +26,17 @@ h2 {
   position: relative;
 }
 
+p {
+  margin: 5% 0 5% 0;
+  width: 75%;
+  height: auto;
+  font-size: 1.1rem;
+  font-weight: 600;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -147,10 +158,6 @@ article.dogs h2 {
   text-transform: uppercase;
 }
 
-article.dogs h2::after {
-  content: "";
-}
-
 article.dogs section.dog {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -173,21 +180,22 @@ article.dogs section.dog img {
   max-width: 80%;
 }
 
-article.dogs section.dog p {
-  margin: 5% 0 5% 0;
-  width: 75%;
-  height: auto;
-  font-size: 1.1rem;
-  font-weight: 600;
-  overflow: hidden;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
 article.dogs section.dog h3 {
   font-size: 3rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+article.dogs section.dog button {
+  width: 50%;
+}
+
+article.dogs section.dog .read-more-text {
+  display: none;
+}
+
+article.dogs section.dog .read-more-text--active {
+  display: inline;
 }
 
 aside {
@@ -298,15 +306,17 @@ article.puppies section img {
   margin-bottom: 5%;
 }
 
-article.puppies section p {
-  margin: 0 0 5% 0;
-  width: 75%;
-  height: auto;
-  font-size: 1.1rem;
-  font-weight: 600;
-  overflow: hidden;
-  -webkit-transition: .5s;
-  transition: .5s;
+article.puppies section button {
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+article.puppies section .read-more-text {
+  display: none;
+}
+
+article.puppies section .read-more-text--active {
+  display: inline;
 }
 
 article.about {
