@@ -11,7 +11,7 @@ menuIcon.addEventListener('click', showMenu);
 menuContent.addEventListener('click', showMenu);
 
 //slider
-const slideList = ["img/1.jpg", "img/3.jpg"];
+const slideList = ["img/1.jpg", "img/3.jpg", "img/puppie2.jpg", "img/puppie3.jpg"];
 
 const image = document.querySelector('.slider-image');
 
