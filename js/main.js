@@ -11,11 +11,11 @@ menuIcon.addEventListener('click', showMenu);
 menuContent.addEventListener('click', showMenu);
 
 //slider
-const slideList = ["img/1.jpg", "img/3.jpg", "img/puppie2.jpg", "img/puppie3.jpg"];
+const slideList = ["img/slider1.webp", "img/slider2.webp", "img/slider3.webp"];
 
 const image = document.querySelector('.slider-image');
 
-const time = 3000;
+const time = 2500;
 let active = 0;
 
 const changeSlide = () => {

@@ -3,23 +3,31 @@ article.communication
     height: auto
     margin-bottom: 15%
     h2
-        width: 100%
-        font-size: 4rem
-        font-weight: 400
-        text-align: center
-        text-transform: uppercase
         margin: 10% 0 5% 0
+        @media (min-width: 1024px)
+            margin: 10% 0 0 0
     .box
         margin: 5% 0 0 0
         display: flex
-        width: 100%
-        justify-content: space-between
+        width: 90%
+        justify-content: center
         align-items: center
+        @media (min-width: 1024px)
+            margin: 0 0 0 0
         i
             flex-basis: 20%
             font-size: 1.75rem
-            text-align: center
+            text-align: right
+            @media (min-width: 1024px)
+                font-size: 4rem
         .contact 
             flex-basis: 80%
             font-size: 1.7rem
             margin-left: 5%
+            text-align: center
+            display: flex
+            align-self: center
+            @media (min-width: 1024px)
+                font-size: 3rem
+                flex-basis: 20%
+                
