@@ -6,15 +6,18 @@ article.dogs
     flex-wrap: wrap
     section.dog
         flex-basis: 100%
+        height: auto
         margin: 5% 0 5% 0
         display: flex
         align-items: center
         flex-direction: column
         img
-            flex-basis: 90%
+            flex-basis: 80%
             text-align: center
             height: auto
-            max-width: 80%
+            max-width: 50%
+            @media (min-width: 1024px)
+                max-width: 20%
         h3
             font-size: 3rem
             font-weight: 400

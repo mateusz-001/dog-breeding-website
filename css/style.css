@@ -175,6 +175,7 @@ article.dogs {
 article.dogs section.dog {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  height: auto;
   margin: 5% 0 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,11 +190,17 @@ article.dogs section.dog {
 }
 
 article.dogs section.dog img {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
   text-align: center;
   height: auto;
-  max-width: 80%;
+  max-width: 50%;
+}
+
+@media (min-width: 1024px) {
+  article.dogs section.dog img {
+    max-width: 20%;
+  }
 }
 
 article.dogs section.dog h3 {
@@ -496,13 +503,53 @@ article.how-to-get h2 {
   }
 }
 
-article.how-to-get iframe {
-  width: 90%;
+article.how-to-get .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
-  article.how-to-get iframe {
-    height: 800px;
+  article.how-to-get .wrapper {
+    width: 20%;
+  }
+}
+
+article.how-to-get .wrapper i {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  font-size: 2rem;
+  text-align: right;
+  margin-left: 0;
+}
+
+@media (min-width: 1024px) {
+  article.how-to-get .wrapper i {
+    font-size: 3rem;
+    margin-right: 30px;
+  }
+}
+
+article.how-to-get .wrapper p {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  font-size: 1.7rem;
+}
+
+@media (min-width: 1024px) {
+  article.how-to-get .wrapper p {
+    font-size: 2rem;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
   }
 }
 
@@ -551,7 +598,7 @@ article.communication .box i {
 
 @media (min-width: 1024px) {
   article.communication .box i {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -570,7 +617,7 @@ article.communication .box .contact {
 
 @media (min-width: 1024px) {
   article.communication .box .contact {
-    font-size: 3rem;
+    font-size: 2rem;
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
   }
@@ -669,7 +716,7 @@ p {
 
 @media (min-width: 1024px) {
   p {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 

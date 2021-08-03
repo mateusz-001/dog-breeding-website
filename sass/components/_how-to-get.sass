@@ -9,8 +9,26 @@ article.how-to-get
         margin: 0 0 15% 0
         @media (min-width: 1024px)
             margin: 0 0 5% 0
-    iframe
-        width: 90%
+    .wrapper
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        flex-wrap: wrap
+        width: 100% 
         @media (min-width: 1024px)
-            height: 800px
+                width: 20%
+        i
+            flex-basis: 10%
+            font-size: 2rem
+            text-align: right
+            margin-left: 0
+            @media (min-width: 1024px)
+                font-size: 3rem
+                margin-right: 30px
+        p
+            flex-basis: 75%
+            font-size: 1.7rem
+            @media (min-width: 1024px)
+                font-size: 2rem
+                flex-basis: 60%
             
